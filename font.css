@@ -10,6 +10,11 @@
   src: url("fonts/Circe-Bold.ttf");
 }
 
+.pic__item {
+  height: auto;
+  width: 560px;
+  margin-right: 5px;
+}
 
 .project__btn {
   display: inline-block;
