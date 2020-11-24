@@ -21,7 +21,7 @@ $(document).ready(function () {
         // },
         "1300": {
           items: 2,
-          fixedWidth: 560
+          fixedWidth: 420
         }
       }
     });
@@ -29,11 +29,13 @@ $(document).ready(function () {
 
 
   $('.pic__item').click(function () {
-    var industryVideo = $(this).attr('data-video');
-    $.fancybox.open({
+    var pics = $(this).attr('data-pic');
+    $(this).fancybox({
       type: "inline",
-      src: ".modal__container[data-video='" + industryVideo + "']"
+      src: ".modal__container[data-pic='" + pics + "']"
     });
+
+
   })
 
 
