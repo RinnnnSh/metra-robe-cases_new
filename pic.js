@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-
-  console.log('Hi');
-
-
   if ($('div').is('.pic__slider')) {
     var picSlider = tns({
       container: '.pic__slider',
@@ -15,15 +11,8 @@ $(document).ready(function () {
       mouseDrag: false,
       speed: 500,
       fixedWidth: false,
-      responsive: {
-        // "740": {
-        //   fixedWidth: 380
-        // },
-        "1300": {
-          items: 2,
-          fixedWidth: 420
-        }
-      }
+      items: 2,
+      fixedWidth: 420
     });
   }
 
@@ -34,9 +23,5 @@ $(document).ready(function () {
       type: "inline",
       src: ".modal__container[data-pic='" + pics + "']"
     });
-
-
   })
-
-
 })
